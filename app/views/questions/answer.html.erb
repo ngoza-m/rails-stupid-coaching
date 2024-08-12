@@ -1,0 +1,32 @@
+<blockquote>
+<p><%= params[:query] %></p>
+<footer><em>— You</em></footer>
+</blockquote>
+
+<blockquote class="coach">
+<p><%= @answer %></p>
+<footer><em>— Your Coach</em></footer>
+</blockquote>
+
+<%= link_to "Ask another question?", ask_path %>
+
+
+
+<%# ----------------------------------------------- %>
+
+<style>
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 10px
+}
+
+.coach {
+  background: #FFFDD0;
+}
+
+p {
+  font-size: 18px;
+}
+</style>
